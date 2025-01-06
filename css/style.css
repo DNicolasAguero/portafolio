@@ -214,3 +214,43 @@ h2 {
     width: 30px;
 }
 
+.rectSobreMi {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.rectSobreMi img {
+    display: block;
+    width: 170px;
+}
+
+.rectSobreMi p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #EEEEEE;
+    font-family: "Inter", serif;
+    font-weight: 300;
+    font-size: 25px;
+    background-color: transparent;
+    white-space: nowrap;
+}
+
+.textoSobreMi{
+    font-family: "Inter", serif;
+    font-weight: 200;
+    font-size: 25px;
+    color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: 50px;
+    line-height: 140%;
+}
+
