@@ -254,3 +254,109 @@ h2 {
     line-height: 140%;
 }
 
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .hover-effect-3 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .hover-effect-3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .hover-effect-3 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    transition: opacity 0.5s ease;
+  }
+  
+  .hover-effect-3:hover img {
+    transform: scale(1.2);
+  }
+  
+  .hover-effect-3:hover .overlay {
+    opacity: 1;
+  }
+  
+  /* Modal */
+  .modal-checkbox {
+    display: none;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  /* Mostrar el modal cuando el checkbox está marcado */
+  .modal-checkbox:checked ~ .modal {
+    display: flex;
+  }
+  
+  /* Cerrar botón */
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
