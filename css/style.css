@@ -214,13 +214,16 @@ h2 {
     width: 30px;
 }
 
+.sobreMi {
+    margin: 150px 0px;
+}
+
 .rectSobreMi {
     position: relative;
     display: inline-block;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 130px;
 }
 
 .rectSobreMi img {
@@ -250,7 +253,7 @@ h2 {
     justify-content: center;
     align-content: center;
     text-align: center;
-    margin: 50px;
+    margin: 40px 50px;
     line-height: 140%;
 }
 
@@ -259,6 +262,7 @@ h2 {
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
+    background-color: transparent;
   }
   
   .hover-effect-3 {
@@ -306,9 +310,9 @@ h2 {
   /* Modal */
   .modal-checkbox {
     display: none;
-  }
+ }
   
-  .modal {
+.modal {
     display: none;
     position: fixed;
     z-index: 1000;
@@ -316,11 +320,10 @@ h2 {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
     animation: fadeIn 0.3s ease;
-  }
+}
   
   .modal-content {
     max-width: 90%;
@@ -328,15 +331,15 @@ h2 {
     margin: auto;
     display: block;
     border-radius: 10px;
-  }
+}
   
   /* Mostrar el modal cuando el checkbox está marcado */
   .modal-checkbox:checked ~ .modal {
     display: flex;
-  }
+}
   
   /* Cerrar botón */
-  .close {
+.close {
     position: absolute;
     top: 20px;
     right: 35px;
@@ -345,18 +348,61 @@ h2 {
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
-  }
+}
   
   .close:hover,
   .close:focus {
     color: #bbb;
-  }
-  
-  @keyframes fadeIn {
+}
+
+
+
+@keyframes fadeIn {
     from {
       opacity: 0;
     }
     to {
       opacity: 1;
     }
-  }
+}
+
+.centerTrabajos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trabajos {
+    background-color: #262121;
+    padding: 20px;
+    border-radius: 20px;
+    width: 1300px;
+}
+
+.trabajosTexto{
+    background-color: transparent;
+    position: relative;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.trabajosTexto img {
+    display: block;
+    background-color: transparent;
+    width: 220px;
+}
+
+.trabajosTexto p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #EEEEEE;
+    font-family: "Inter", serif;
+    font-weight: 300;
+    font-size: 30px;
+    background-color: transparent;
+}
